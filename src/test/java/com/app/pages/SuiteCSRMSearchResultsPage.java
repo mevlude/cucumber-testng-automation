@@ -17,10 +17,12 @@ public class SuiteCSRMSearchResultsPage {
 		PageFactory.initElements(driver, this);
 	}
 
+
 	public WebElement resultLink(String string) {
 		return driver.findElement(By.linkText(string));
 	}
 	
+
 	public List<WebElement> resultsLink(String string) {
 		return driver.findElements(By.linkText(string));
 	}
